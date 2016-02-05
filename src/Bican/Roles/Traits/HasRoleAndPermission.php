@@ -352,9 +352,9 @@ trait HasRoleAndPermission
      */
     public function syncPermissions($permissions)
     {
-        $this->permissions = null;
+        $this->userPermissions = null;
 
-        return $this->permissions()->sync($permissions);
+        return $this->userPermissions()->sync($permissions);
     }
 
     /**
